@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="banner">
+            <div class="logo">
+                <span>LOGO</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="intro">
+                <span>This is not a real online service! You know you need something like this in your real life to help you realize your deepest dreams. Sign up <i>now</i> to get started.<br><br>You <i>know</i> you want to.</span>
+            </div>
+            <form method="post" action="https://httpbin.org/post">
+                <div class="form-main-section">
+                    <span class="form-label">Let's do this!</span>
+                    <div class="form-element">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" name="first_name" placeholder="John" id="first_name" pattern="^[a-z][A-Z][-]+$" required>
+                        <span></span>
+                    </div>
+                    <div class="form-element">
+                        <label for="surname">LAST NAME</label>
+                        <input type="text" name="last_name" placeholder="Dory" id="surname" pattern="^[a-z][A-Z][-]+$" required>
+                        <span></span>
+                    </div>
+                    <div class="form-element">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" placeholder="j.dory@skim.com" required>
+                        <span></span>
+                    </div>
+                    <div class="form-element">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone_number" id="phone" placeholder="+31(...)" minlength="9" maxlength="10" pattern="^[0-9][+]+$">
+                    </div>
+                    <div class="form-element">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="user_password" id="password" placeholder="******" minlength="6">
+                    </div>
+                    <div class="form-element">
+                        <label for="password_confirm">CONFIRM PASSWORD</label>
+                        <input type="password" name="user_password" id="password_confirm place" placeholder="******" minlength="6">
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button>Create Account</button>
+                    <span class="log-in">Already have an account? Log in</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
